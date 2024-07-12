@@ -6,7 +6,7 @@ function Footertwo (){
     return(
 
         <div className="footer-hometwo">
-            <footer>Design and coded by me!</footer>
+            <footer>Designed and coded by me!</footer>
         </div>
     );
 }

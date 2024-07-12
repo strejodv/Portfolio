@@ -38,7 +38,7 @@ function Navtwo () {
                         <img className="profile-img" src={profileImage}></img>
                 </div>        
       </div>
-      <footer className="footer-hometwo">Design and coded by me!</footer>
+      <footer className="footer-hometwo">Designed and coded by me!</footer>
         </div>
         
     );
