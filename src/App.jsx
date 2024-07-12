@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/FEportfolio/" element={<Home />} />
         <Route path="/strejodv.github.io/about" element={<About />} />
         <Route path="/projectone" element={<Projectone />} />
         <Route path="/projecttwo" element={<Projecttwo />} />
