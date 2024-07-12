@@ -4,7 +4,7 @@ function Footer (){
     return(
 
         <div className="footer-home">
-            <h3>STEFANO TREJO</h3>
+            <footer>Design and coded by me!</footer>
         </div>
     );
 }

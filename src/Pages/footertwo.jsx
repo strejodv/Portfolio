@@ -6,7 +6,7 @@ function Footertwo (){
     return(
 
         <div className="footer-hometwo">
-            <footer>STEFANO TREJO</footer>
+            <footer>Design and coded by me!</footer>
         </div>
     );
 }
