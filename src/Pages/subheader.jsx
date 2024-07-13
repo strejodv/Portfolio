@@ -4,7 +4,7 @@ function Subheader () {
     return (
         
         <div>
-            <h2 className="subHeader">UX Design Projects</h2>
+            <h2 className="subHeader">UX Case Studies</h2>
         </div>
         
     );

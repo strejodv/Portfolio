@@ -48,7 +48,7 @@ ul{
   flex-direction:row;
   list-style-type: none;
   gap:35px;
-  margin-right: 4vw; /* Equivalent to 60px */
+  margin-right: 4vw; 
   text-decoration: none;
 }
 
@@ -155,6 +155,16 @@ ul{
   font-size: 24px;
   font-weight: 300;
   transform: translateY(-80px);
+  animation: spin 0.9s ease-in-out 1.9s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-80px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-80px) rotate(360deg);
+  }
 }
 
 .card-img {
@@ -179,7 +189,10 @@ ul{
   flex-wrap: wrap;
   box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.5);
   transform-origin: bottom center;
+  transition: transform 0.3s ease;
 }
+
+/*
 
 @keyframes wiggle {
   0%, 100% {
@@ -196,8 +209,11 @@ ul{
   }
 }
 
+*/
+
 .card:hover {
   animation: wiggle 1s ease-in-out;
+  transform: scale(1.1);
 }
 
 .card > h2 {
