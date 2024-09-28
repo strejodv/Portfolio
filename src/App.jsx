@@ -53,8 +53,8 @@ function App() {
         <div className="nebula"></div>
         <div className="nebula"></div>
       
-      {/* Your landing page component */}
-      <Landingpage />
+        {/* Your landing page component */}
+        <Landingpage />
     </div>
   )
 }
