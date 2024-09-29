@@ -1,5 +1,6 @@
 import Landingpage from './components/Landingpage';
 import Navbar from './Components/Navbar'
+import Herosection from './Components/Herosection'
 
 function App() {
 
@@ -52,8 +53,12 @@ function App() {
         <div className="nebula"></div>
         <div className="nebula"></div>
         <div className="nebula"></div>
+        <div className="nebula"></div>
+        
+        
       
         {/* Your landing page component */}
+        <Herosection />
         <Landingpage />
     </div>
   )

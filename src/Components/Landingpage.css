@@ -1,16 +1,18 @@
 .carousel-container {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
+  margin-top: 10px;
   transform: translate(-50%, -50%);
   width: 85vh;
   padding: 40px;
-  margin-top: 40px;
   border-radius: 20px;
   backdrop-filter: blur(2px) saturate(150%);
   background: rgba(252, 252, 252, 0);
   border: 1px solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
 
 .carousel {
@@ -52,6 +54,10 @@
   display: block;
 }
 
+input[type="radio"] {
+  display: none;
+}
+
 /* Nav styles for dots */
 .carousel-nav {
   display: flex;
@@ -75,4 +81,12 @@
 
 .carousel-nav label.active {
   background-color: #1b0158;
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
