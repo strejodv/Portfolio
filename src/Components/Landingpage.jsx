@@ -11,20 +11,26 @@ const Landingpage = () => {
       <div className="carousel">
         <div className="slide">
           <img src={image1} alt="Image 1" />
+          <h1>Weather App</h1>
+          <p>Weather app the works by fetching real-time data from OpenWeatherMap API</p>
         </div>
         <div className="slide">
           <img src={image2} alt="Image 2" />
+          <h2>Image 2 Header</h2>
+          <p>This is a description for Image 2.</p>
         </div>
         <div className="slide">
           <img src={image3} alt="Image 3" />
+          <h2>Image 3 Header</h2>
+          <p>This is a description for Image 3.</p>
         </div>
-      </div>
-      <div class="carousel-nav">
-        <label for="slide1"></label>
-        <label for="slide2"></label>
-        <label for="slide3"></label>
-      </div>
     </div>
+      <div className="carousel-nav">
+        <label htmlFor="slide1"></label>
+        <label htmlFor="slide2"></label>
+        <label htmlFor="slide3"></label>
+      </div>
+  </div>
   );
 }
 
