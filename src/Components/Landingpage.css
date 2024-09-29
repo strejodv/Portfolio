@@ -1,14 +1,14 @@
 .carousel-container {
-  position: absolute; 
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  width: 85vh; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85vh;
   padding: 40px;
   margin-top: 40px;
   border-radius: 20px;
   backdrop-filter: blur(2px) saturate(150%);
-  background: rgba(252, 252, 252, 0); 
+  background: rgba(252, 252, 252, 0);
   border: 1px solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
 }
@@ -21,8 +21,9 @@
 .slide {
   min-width: 100%;
   box-sizing: border-box;
-  text-align: center; /* Centers text */
+  text-align: center;
   position: relative;
+  display: none; /* Hide all slides by default */
 }
 
 .slide img {
@@ -32,38 +33,46 @@
 }
 
 .slide h1 {
-  margin: 10px 0; /* Space between text and image */
+  margin: 10px 0;
   position: relative;
   color: white;
 }
 
 .slide p {
-  margin: 10px 0; /* Space between text and image */
+  margin: 10px 0;
   position: relative;
   color: white;
   font-weight: 200;
 }
 
+/* Show the slide that matches the checked radio input */
+#radio1:checked ~ .carousel .slide1,
+#radio2:checked ~ .carousel .slide2,
+#radio3:checked ~ .carousel .slide3 {
+  display: block;
+}
+
+/* Nav styles for dots */
 .carousel-nav {
   display: flex;
   justify-content: center;
-  margin-top: 40px; /* Adjust as needed */
+  margin-top: 40px;
 }
 
 .carousel-nav label {
-  width: 15px; /* Size of the nav dots */
+  width: 15px;
   height: 15px;
-  background-color: #ccc; /* Default color of dots */
+  background-color: #ccc;
   border-radius: 50%;
-  margin: 0 10px; /* Space between dots */
+  margin: 0 10px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
 
 .carousel-nav label:hover {
-  background-color: #ff9900; /* Change color on hover */
+  background-color: #ff9900;
 }
 
 .carousel-nav label.active {
-  background-color: #1b0158; /* Active dot color */
+  background-color: #1b0158;
 }
