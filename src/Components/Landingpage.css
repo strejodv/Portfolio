@@ -1,6 +1,6 @@
 .carousel-container {
   position: absolute;
-  top: 60%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60vw; /* Make it wider based on the viewport width */
@@ -33,7 +33,7 @@
 .slide img {
   width: 85%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: transform 0.3s ease; /* Smooth transition */
   margin-bottom: 20px;
 }
@@ -97,4 +97,71 @@ input[type="radio"] {
   color: white;
   font-size: 2.5rem;
   margin-bottom: 40px;
+}
+
+/* Media Queries /*
+
+/* Media query for tablet size (768px) */
+@media (max-width: 768px) {
+  .carousel-container {
+    top: 38%;
+    left: 50%;
+    width: 75vw; /* Increase width for tablets */
+    padding: 30px; /* Reduce padding */
+  }
+
+  .slide img {
+    width: 80%; /* Adjust image size */
+  }
+
+  .work-title {
+    font-size: 2rem; /* Reduce title size */
+  }
+}
+
+/* Media query for iPhone 12/13/14 screens (390px) */
+@media (max-width: 390px) {
+  .carousel-container {
+    top: 20%;
+    left: 50%;
+    width: 90vw; /* Make it almost full width on mobile */
+    padding: 20px; /* Further reduce padding */
+  }
+
+  .slide img {
+    width: 75%; /* Reduce image size */
+  }
+
+  .work-title {
+    font-size: 1.8rem; /* Smaller title font */
+    margin-bottom: 30px;
+  }
+
+  .carousel-nav label {
+    width: 12px;
+    height: 12px; /* Smaller dots */
+    margin: 0 7px;
+  }
+}
+
+/* Media query for smaller mobile screens (375px) */
+@media (max-width: 375px) {
+  .carousel-container {
+    width: 95vw; /* Full width for smaller screens */
+    padding: 15px; /* Minimal padding */
+  }
+
+  .slide img {
+    width: 70%; /* Smaller image for smaller screens */
+  }
+
+  .work-title {
+    font-size: 1.6rem; /* Further reduced title size */
+  }
+
+  .carousel-nav label {
+    width: 10px;
+    height: 10px; /* Even smaller dots */
+    margin: 0 5px;
+  }
 }

@@ -1,0 +1,78 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 40px;
+  color: rgb(255, 255, 255);
+}
+
+.footer-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #dbb407; /* Change color on hover */
+}
+
+.bx bxl-instagram-alt i {
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Media Queries */
+
+/* Media query for tablet size (768px) */
+@media (max-width: 768px) {
+    .footer {
+      margin-top: 50px;
+      padding: 15px;
+    }
+  
+    .footer-icons {
+      gap: 30px;
+    }
+  
+    .footer-icons a {
+      font-size: 20px;
+    }
+  }
+  
+  /* Media query for iPhone 12/13/14 screens (390px) */
+  @media (max-width: 390px) {
+    .footer {
+      margin-top: 30px;
+      padding: 10px;
+    }
+  
+    .footer-icons {
+      gap: 20px;
+    }
+  
+    .footer-icons a {
+      font-size: 18px;
+    }
+  }
+  
+  /* Media query for smaller mobile screens (375px) */
+  @media (max-width: 375px) {
+    .footer {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  
+    .footer-icons {
+      gap: 15px;
+    }
+  
+    .footer-icons a {
+      font-size: 16px;
+    }
+  }

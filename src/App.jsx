@@ -1,6 +1,7 @@
 import Landingpage from './components/Landingpage';
 import Navbar from './Components/Navbar'
 import Herosection from './Components/Herosection'
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div className='container'>
         {/*stars container */}
         <Navbar />
+        
 
         {/*stars container */}
       <div className="stars">
@@ -60,6 +62,7 @@ function App() {
         {/* Your landing page component */}
         <Herosection />
         <Landingpage />
+        <Footer />
     </div>
   )
 }

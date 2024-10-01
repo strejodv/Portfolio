@@ -100,3 +100,61 @@ body {
   75% { transform: translate(-200px, 50px); }
   100% { transform: translate(0, 0); }
 }
+
+/* Media Queries /*
+
+/* Media Query for Tablets (768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .stars {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .nebula {
+    width: 150px;
+    height: 150px;
+    filter: blur(100px);
+  }
+}
+
+/* Media Query for iPhone 12/13/14 (390px) */
+@media (max-width: 390px) {
+  body {
+    background: radial-gradient(circle at 50% 50%, #070719, #030313, #000);
+  }
+
+  .container {
+    height: auto;
+  }
+
+  .stars {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .nebula {
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    filter: blur(80px);
+  }
+}
+
+/* Media Query for Smaller Mobile Screens (375px) */
+@media (max-width: 375px) {
+  .stars {
+    height: 70vh;
+  }
+
+  .nebula {
+    width: 100px;
+    height: 100px;
+    filter: blur(60px);
+  }
+}
