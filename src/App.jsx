@@ -1,4 +1,4 @@
-import Landingpage from './components/Landingpage';
+import Landingpage from './Components/Landingpage'
 import Navbar from './Components/Navbar'
 import Herosection from './Components/Herosection'
 import Footer from './Components/Footer'
