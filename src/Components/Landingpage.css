@@ -1,10 +1,11 @@
 .carousel-container {
   position: absolute;
-  top: 45%;
+  top: 60%;
   left: 50%;
-  margin-top: 10px;
   transform: translate(-50%, -50%);
-  width: 85vh;
+  width: 60vw; /* Make it wider based on the viewport width */
+  max-width: 1200px; /* Set a reasonable maximum width */
+  height: auto; /* Allow the height to adapt based on content */
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(2px) saturate(150%);
@@ -14,6 +15,7 @@
   z-index: 1;
   position: relative;
 }
+
 
 .carousel {
   display: flex;
@@ -32,6 +34,12 @@
   width: 85%;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition */
+  margin-bottom: 20px;
+}
+
+.slide img:hover {
+  transform: scale(1.01); /* Scale up by 5% */
 }
 
 .slide h1 {

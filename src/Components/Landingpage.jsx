@@ -9,7 +9,7 @@ const Landingpage = () => {
   return (
     <div className="carousel-container">
       <input type="radio" name="slider" id="radio1"  />
-      <input type="radio" name="slider" id="radio2" defaultChecked/>
+      <input type="radio" name="slider" id="radio2" defaultChecked />
       <input type="radio" name="slider" id="radio3" />
       <h1 className='work-title'>Dev Projects</h1>
       <div className="carousel">
