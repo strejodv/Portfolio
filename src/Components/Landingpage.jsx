@@ -1,9 +1,9 @@
 import React from 'react';
 import './Landingpage.css';
 
-import image1 from '../components/assets/img1.png';
-import image2 from '../components/assets/img2.png';
-import image3 from '../components/assets/img3.png';
+import image1 from '../Components/assets/img1.png';
+import image2 from '../Components/assets/img2.png';
+import image3 from '../Components/assets/img3.png';
 
 const Landingpage = () => {
   return (
