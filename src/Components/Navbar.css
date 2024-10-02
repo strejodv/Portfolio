@@ -45,21 +45,48 @@
 
 /*Media Queries */
 
-@media (max-width: 850px) {
-    .quotes-app {
-      width: 75vmin;
-      aspect-ratio: 2 / 3;
-    }
-  }
-  
-  @media (max-width: 550px) {
-    .quotes-app {
-      aspect-ratio: 1 / 2;
-    }
-  
-    .buttons {
-      flex-direction: column;
-      row-gap: 2rem;
-    }
-  }
+/*Media Queries */
 
+/*Media Queries */
+
+@media (max-width: 850px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%; /* Ensure navbar width is constrained */
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1900px; /* Reduce gap for smaller screens */
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .logo {
+        margin: 0 20px; /* Adjust logo margin */
+    }
+}
+
+@media (max-width: 550px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+        flex-wrap: wrap; /* Allow wrapping if space is tight */
+    }
+
+    .nav-links {
+        flex-direction: row; /* Ensure nav-links remain in a row */
+        gap: 15px; /* Smaller gap for very small screens */
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+}
