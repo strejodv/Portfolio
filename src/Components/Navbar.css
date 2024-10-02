@@ -53,14 +53,13 @@
 
     .nav-links {
         flex-direction: row; /* Stack links vertically */
-        gap: 20px; /* Reduce space between links */
-        margin-right: 5px; /* Adjust right margin */
-        margin-left: 5px; /* Adjust left margin */
-        box-sizing: border-box;
+        gap: 15px; /* Reduce space between links */
+        margin-right: 0px; /* Adjust right margin */
+        margin-left: 0px; /* Adjust left margin */
     }
 
     .nav-links li {
-        display: block; /* Ensure the links are block elements */
+        
     }
 
     .nav-links a {
