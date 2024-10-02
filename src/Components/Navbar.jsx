@@ -7,7 +7,6 @@ const Navbar = () => {
         <div class="logo">Strejodv</div>
 
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
             <li><a href="https://www.linkedin.com/in/stefanotrejo/" target="_blank" aria-label="Twitter">
             <i class='bx bxl-linkedin-square'></i> 
             </a></li>
