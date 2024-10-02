@@ -23,6 +23,17 @@
 }
 
 
+@media (max-width: 400px) {
+  .footer {
+    margin-top: 50px; /* Reduce margin-top */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .footer-icons {
+    gap: 20px; /* Reduce gap between icons */
+  }
+}
+
 
 
 

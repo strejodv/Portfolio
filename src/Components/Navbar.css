@@ -49,44 +49,37 @@
 
 /*Media Queries */
 
-@media (max-width: 850px) {
+/* Prevent overflow on 550px screens */
+@media (max-width: 400px) {
     .navbar {
-        justify-content: space-between;
-        padding: 10px;
-        width: 100%; /* Ensure navbar width is constrained */
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Reduce padding for smaller screens */
     }
-
+  
     .nav-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1900px; /* Reduce gap for smaller screens */
-        margin: 0;
-        padding: 0;
+        flex-direction: row; /* Stack links vertically */
+        margin-top: 10px;
+        gap: 20px; /* Reduce gap between links */
+        margin-right: 0; /* Remove margin-right */
     }
-
+  
     .nav-links a {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem; /* Reduce font size */
+        color: #ff9900;
+    }
+  
+    .logo {
+        margin-top: 10px;
+        margin-left: 0; /* Remove margin-left */
+        margin-right: 0; /* Remove margin-right */
     }
 
     .logo {
-        margin: 0 20px; /* Adjust logo margin */
+        margin-left: 0;
+        font-size: 1.5rem; /* Adjust logo font size */
+        overflow-x: hidden; /* Ensure no horizontal overflow from the logo */
+        max-width: 100vw; /* Ensure logo does not cause overflow */
     }
 }
 
-@media (max-width: 550px) {
-    .navbar {
-        justify-content: space-between;
-        padding: 10px;
-        flex-wrap: wrap; /* Allow wrapping if space is tight */
-    }
 
-    .nav-links {
-        flex-direction: row; /* Ensure nav-links remain in a row */
-        gap: 15px; /* Smaller gap for very small screens */
-    }
-
-    .logo {
-        margin-right: 10px;
-    }
-}
