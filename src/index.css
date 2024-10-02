@@ -104,32 +104,3 @@ body {
 
 /* Media Queries */
 
-@media only screen and (max-width: 481px) and (max-height: 768px) {
-    body {
-        background: radial-gradient(circle at 50% 50%, #090922, #050519, #000);
-        font-size: 0.9rem; /* Adjust font size for better readability */
-      }
-
-      .container {
-          
-      }
-  
-      .stars {
-          width: 100vw;
-          height: 80vh; /* Reduce height to avoid overflow */
-      }
-  
-      .star {
-          width: 2px; /* Slightly smaller stars */
-          height: 2px;
-      }
-  
-      .nebula {
-          width: 150px; /* Scale down the nebula */
-          height: 150px;
-          filter: blur(100px);
-          box-shadow: 0 0 150px 30px rgba(20, 12, 36, 0.2),
-                      0 0 250px 80px rgba(102, 153, 255, 0.15);
-      }
-  }
-  
