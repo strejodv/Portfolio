@@ -6,6 +6,8 @@
     padding: 20px;
     z-index: 1;
     position: relative;
+    box-sizing: border-box;
+    
 }
 
 .nav-links {
@@ -40,3 +42,34 @@
     margin-right: 50px;
 }
 
+
+/*Media Queries */
+
+@media only screen and (max-width: 376px) and (max-height: 667px) {
+    .navbar {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .nav-links {
+        flex-direction: row; /* Stack links vertically */
+        gap: 20px; /* Reduce space between links */
+        margin-right: 5px; /* Adjust right margin */
+        margin-left: 5px; /* Adjust left margin */
+        box-sizing: border-box;
+    }
+
+    .nav-links li {
+        display: block; /* Ensure the links are block elements */
+    }
+
+    .nav-links a {
+        font-size: 1.1rem; /* Slightly reduce font size */
+    }
+
+    .logo {
+        font-size: 1.5rem; /* Adjust logo font size */
+        margin-left: 0; /* Center align logo */
+        margin-right: 0;
+    }
+}
