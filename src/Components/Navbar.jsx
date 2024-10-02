@@ -8,8 +8,12 @@ const Navbar = () => {
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="https://www.linkedin.com/in/stefanotrejo/">About</a></li>
-            <li><a href="https://github.com/strejodv">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/stefanotrejo/" target="_blank" aria-label="Twitter">
+            <i class='bx bxl-linkedin-square'></i> 
+            </a></li>
+            <li><a href="https://github.com/strejodv" target="_blank" aria-label="Facebook"> 
+            <i className="bx bxl-github"></i>
+            </a></li>
         </ul>
     </nav>
   )
