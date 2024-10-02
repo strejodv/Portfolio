@@ -45,30 +45,21 @@
 
 /*Media Queries */
 
-@media only screen and (max-width: 412px) {
-    .navbar {
-        padding: 10px;
-        box-sizing: border-box;
+@media (max-width: 850px) {
+    .quotes-app {
+      width: 75vmin;
+      aspect-ratio: 2 / 3;
     }
+  }
+  
+  @media (max-width: 550px) {
+    .quotes-app {
+      aspect-ratio: 1 / 2;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+  }
 
-    .nav-links {
-        flex-direction: row; /* Stack links vertically */
-        gap: 15px; /* Reduce space between links */
-        margin-right: 0px; /* Adjust right margin */
-        margin-left: 0px; /* Adjust left margin */
-    }
-
-    .nav-links li {
-        
-    }
-
-    .nav-links a {
-        font-size: 1.1rem; /* Slightly reduce font size */
-    }
-
-    .logo {
-        font-size: 1.5rem; /* Adjust logo font size */
-        margin-left: 0; /* Center align logo */
-        margin-right: 0;
-    }
-}
