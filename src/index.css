@@ -9,6 +9,10 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
 
 * {
   margin: 0;
@@ -104,4 +108,11 @@ body {
 
 /* Media Queries */
 
-/* Media Query for small screens (max-width: 550px) */
+@media (max-width: 400px) {
+  .nebula {
+    top: 30%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+  }
+}
