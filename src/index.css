@@ -5,7 +5,7 @@ body {
   margin: 0;
   overflow-y: auto; 
   overflow-x: hidden; 
-  background: radial-gradient(circle at 50% 50%, #090922, #050519, #000);
+  background: radial-gradient(circle at 50% 50%, #13133b, #12123b, #000);
   font-family: 'Outfit', sans-serif;
 }
 
@@ -82,6 +82,7 @@ body::-webkit-scrollbar {
 .star:nth-child(28) { top: 25%; left: 40%; --delay: 28; }
 .star:nth-child(29) { top: 58%; left: 75%; --delay: 29; }
 .star:nth-child(30) { top: 88%; left: 30%; --delay: 30; }
+
 
 .nebula {
   position: absolute;
