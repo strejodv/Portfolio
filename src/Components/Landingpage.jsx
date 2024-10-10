@@ -11,7 +11,7 @@ const Landingpage = () => {
       <input type="radio" name="slider" id="radio1"  />
       <input type="radio" name="slider" id="radio2" defaultChecked />
       <input type="radio" name="slider" id="radio3" />
-      <h2 className='work-title'>Programming Work</h2>
+      <h1 className='work-title'>Programming Work</h1>
       <div className="carousel">
         <div className="slide slide1">
           <a href="https://weather-app-five-omega-60.vercel.app/" target="_blank" rel="noopener noreferrer">
