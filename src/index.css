@@ -83,14 +83,8 @@ body::-webkit-scrollbar {
 .star:nth-child(29) { top: 58%; left: 75%; --delay: 29; }
 .star:nth-child(30) { top: 88%; left: 30%; --delay: 30; }
 
-
 /* Media Queries */
 
 @media (max-width: 400px) {
-  .nebula {
-    top: 30%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-  }
+  
 }
