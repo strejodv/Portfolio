@@ -1,6 +1,6 @@
 .image-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap; /* Allow items to wrap to new lines */
   width: 80vw;
@@ -16,14 +16,15 @@
 
 .image-box {
   text-align: center;
-  flex-basis: calc(33.33% - 40px); /* Adjust size and subtract gap */
-  box-sizing: border-box; /* Ensures padding and margins are included in width */
+  flex: 1 1 calc(33.33% - 40px); /* Equal size with gap considered */
+  max-width: 33.33%; /* Ensure no element gets wider than 33% */
+  box-sizing: border-box; /* Prevent overflow by including padding/margins */
 }
 
 .image-box img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%; /* Ensure images fill the width of their container */
+  height: 200px; /* Set a consistent height for images */
+  object-fit: cover; /* Maintain aspect ratio */
   border-radius: 15px;
   transition: transform 0.3s ease;
   margin-bottom: 20px;
@@ -34,13 +35,23 @@
 }
 
 .image-box h2 {
-  color: white;
+  color: white; /* Explicitly set color for h2 */
   margin: 10px 0;
+  font-size: 1.2rem; /* Adjust font size for consistency */
 }
 
 .image-box p {
-  color: white;
+  color: white; /* Explicitly set color for p */
   font-weight: 200;
+  font-size: 1rem; /* Set a consistent font size for paragraphs */
+}
+
+a {
+  text-decoration: none; /* Remove underline on links */
+}
+
+a:visited {
+  color: inherit; /* Keep color consistent for visited links */
 }
 
 /* Media Queries for smaller screens */
@@ -52,13 +63,14 @@
   }
 
   .image-box {
-    flex-basis: 100%; /* Make each image-box take up the full width */
+    flex-basis: 100%; /* Full width for each image-box */
+    max-width: 100%; /* Prevent overflow on smaller screens */
     margin-bottom: 20px;
   }
 
   .image-box img {
     width: 100%;
-    height: auto;
+    height: auto; /* Allow height to adjust */
   }
 
   .image-box h2 {
