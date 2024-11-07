@@ -1,34 +1,36 @@
 .image-container {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start; /* Align items at the top */
-  width: 80vw; /* Adjust width based on viewport */
-  max-width: 1200px; /* Limit maximum width */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow items to wrap to new lines */
+  width: 80vw;
+  max-width: 1200px;
   margin: 40px auto;
   padding: 40px;
   border-radius: 20px;
   backdrop-filter: blur(2px) saturate(150%);
   background: rgba(252, 252, 252, 0);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  gap: 40px; /* Add space between each image-box */
+  gap: 40px;
 }
 
 .image-box {
   text-align: center;
-  flex-basis: 30%; /* Reduce the size to ensure enough space for the gap */
+  flex-basis: calc(33.33% - 40px); /* Adjust size and subtract gap */
+  box-sizing: border-box; /* Ensures padding and margins are included in width */
 }
 
 .image-box img {
-  width: 300px; /* Set a fixed width for uniform size */
-  height: 200px; /* Set a fixed height for uniform size */
-  object-fit: cover; /* Maintain aspect ratio and fill the box */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 15px;
   transition: transform 0.3s ease;
   margin-bottom: 20px;
 }
 
 .image-box img:hover {
-  transform: scale(1.01); /* Slight scale-up on hover */
+  transform: scale(1.01);
 }
 
 .image-box h2 {
@@ -44,19 +46,19 @@
 /* Media Queries for smaller screens */
 @media (max-width: 600px) {
   .image-container {
-    flex-direction: column; /* Stack images vertically on smaller screens */
+    flex-direction: column;
     padding: 20px;
-    gap: 20px; /* Reduce gap on smaller screens */
+    gap: 20px;
   }
 
   .image-box {
-    flex-basis: 100%; /* Full width for each image */
+    flex-basis: 100%; /* Make each image-box take up the full width */
     margin-bottom: 20px;
   }
 
   .image-box img {
-    width: 100%; /* Allow the image to fill the container */
-    height: auto; /* Let the height adapt */
+    width: 100%;
+    height: auto;
   }
 
   .image-box h2 {
